@@ -2,13 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Tech Blog</title>
+    <title>The Tech Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
   <body>
-    {{{body}}}
-
+    <h1>The Tech Blog</h1>
+    <nav>
+      <script id="nav-template" type="text/x-handlebars-template">
+        <ul>
+          {{#navItems}}
+            <li>{{title}}</li>
+         {{/navItems}}
+        </ul>
+      </script>
+    </nav>
+    
+    <div class="templateOutput"></div>
+    
     <script src="index.js"></script>
+    <script id="template" type="text/x-handlebars-template">
+        
+    </script>
   </body>
 </html>
